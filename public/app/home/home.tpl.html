@@ -1,0 +1,13 @@
+<div class="col-sm-12 col-xs-12 col-md-8 col-lg-8">
+    <div>
+        <div class="visible-md visible-lg visible-sm" ui-view="featuredColumn"></div>           
+        <div class="visible-md visible-lg visible-sm" ui-view="recentColumn"></div>                              
+        <div class="visible-md visible-lg visible-sm visible-xs" ui-view="trailerColumn"></div>                                           
+        <div class="visible-md visible-lg visible-sm" ui-view="galleryColumn"></div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 visible-lg visible-md">
+    <div ui-view="dialogueColumn"></div>
+    <div class="panel panel-default" ui-view="boxofficeColumn"></div>             
+    <div class="panel panel-default" ui-view="upcomingColumn"></div>                     
+</div>

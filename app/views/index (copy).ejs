@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html ng-app="moviemaza">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>MovieMaza - jee bhar ke dekho!!</title>    
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMaza - jee bhar ke dekho!!</title>
+</head>
+<body>
+    <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.mumbaitheater.com/">MovieMaza</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                                        <!--<li></li>-->
+                    <li><a href="http://www.mumbaitheater.com/videos">Music</a></li>
+                    <!--<li></li>-->
+                    <li><a href="http://www.mumbaitheater.com/boxoffice">BoxOffice</a></li>
+                    <li><a href="http://www.mumbaitheater.com/genre">Genre</a></li>
+                    <!--<li></li>-->
+                    <li><a href="http://www.mumbaitheater.com/gallery">Gallery</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/search/search" role="search">
+                  <div class="input-group">
+                    <input class="form-control" placeholder="Search" name="search" id="search-form" type="text">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </span>
+                  </div>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="navbar-link">Welcome Guest</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://www.mumbaitheater.com/account">Login</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+	<div class="row">	
+            <div class="col-sm-12 col-xs-12 col-md-8 col-lg-8">
+		<div>
+                    <div class="visible-md visible-lg visible-sm">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Recent releases</div>
+                            <div class="panel-body">
+                                <div class="row"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visible-xs">
+                        <section>
+                            <div class="panel panel-default">
+                              <div class="panel-heading">Recent Releases</div>
+                            </div>
+                            <article>
+                                <div class="body">
+                                    <div class="flexslider flexslider1">
+                                        <ul class="slides"></ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="visible-xs">
+                        <section>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">BoxOffice</div>
+                            </div>
+                            <article>
+                                <div class="body">
+                                    <div class="flexslider flexslider1">
+                                        <ul class="slides"></ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="visible-md visible-lg visible-sm">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Featured Movies</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                                        <div class="thumbnail">
+                                            <a href="http://www.mumbaitheater.com/movies/m-s-dhoni"><img data-src="holder.js/200x300" alt="M.S. Dhoni : The Untold Story" style="max-height: 300px" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/m-s-dhoni.jpeg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                                        <div class="thumbnail">
+                                            <a href="http://www.mumbaitheater.com/movies/pink"><img data-src="holder.js/200x300" alt="Pink" style="max-height: 300px" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/pink.jpeg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                                        <div class="thumbnail">
+                                            <a href="http://www.mumbaitheater.com/movies/akira"><img data-src="holder.js/200x300" alt="Akira" style="max-height: 300px" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/akira.jpeg"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="visible-xs">
+                        <section>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Featured Movies</div>
+                          </div>
+                            <article>
+                                <div class="body">
+                                    <div class="flexslider flexslider1">
+                                        <ul class="slides">
+                                            <li>
+                                                <div>
+                                                    <div>
+                                                        <a href="http://www.mumbaitheater.com/movies/m-s-dhoni"><img style="width: auto;height: 120px;" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/m-s-dhoni.xml" alt="M s dhoni"></a>
+                                                    </div>
+                                                    <div style="font-size: 0.8em; text-align: center; vertical-align: middle; color: gray">
+                                                        M.S. Dhoni :...
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div>
+                                                        <a href="http://www.mumbaitheater.com/movies/pink"><img style="width: auto;height: 120px;" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/pink_002.jpeg" alt="Pink"></a>
+                                                    </div>
+                                                    <div style="font-size: 0.8em; text-align: center; vertical-align: middle; color: gray">
+                                                        Pink
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div>
+                                                        <a href="http://www.mumbaitheater.com/movies/akira"><img style="width: auto;height: 120px;" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/akira_002.jpeg" alt="Akira"></a>
+                                                    </div>
+                                                    <div style="font-size: 0.8em; text-align: center; vertical-align: middle; color: gray">
+                                                        Akira
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <div>
+                                                        <a href="http://www.mumbaitheater.com/movies/a-flying-jatt"><img style="width: auto;height: 120px;" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/a-flying-jatt.jpeg" alt="A flying jatt"></a>
+                                                    </div>
+                                                    <div style="font-size: 0.8em; text-align: center; vertical-align: middle; color: gray">
+                                                        A Flying Jatt
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="visible-md visible-lg visible-sm visible-xs">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Trailers</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="thumbnail">
+                                          <a href="http://www.mumbaitheater.com/youtube/trailers/show/pink"><img data-src="holder.js/200x300" alt="Pink" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/mqdefault_002.jpg"></a>
+                                            <div class="caption">
+                                                    <p><a class="btn btn-default btn-block" href="http://www.mumbaitheater.com/youtube/trailers/show/pink">Pink</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="thumbnail">
+                                          <a href="http://www.mumbaitheater.com/youtube/trailers/show/akira"><img data-src="holder.js/200x300" alt="Akira" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/mqdefault.jpg"></a>
+                                            <div class="caption">
+                                                    <p><a class="btn btn-default btn-block" href="http://www.mumbaitheater.com/youtube/trailers/show/akira">Akira</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="thumbnail">
+                                          <a href="http://www.mumbaitheater.com/youtube/trailers/show/a-flying-jatt"><img data-src="holder.js/200x300" alt="A Flying Jatt" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/mqdefault_003.jpg"></a>
+                                            <div class="caption">
+                                                    <p><a class="btn btn-default btn-block" href="http://www.mumbaitheater.com/youtube/trailers/show/a-flying-jatt">A Flying Jatt</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <section>
+                            <div class="header">New Trailers</div>
+                            <article>
+                                <div class="body">
+                                    <div class="flexslider flexslider-video">
+                                        <ul class="slides">
+                                            <li>
+                                                <a class="fancybox-mobile iframe" href="http://www.youtube.com/embed/AL2TShb6fFs"><img style="width: auto;height: 100px;" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/mqdefault_002.jpg" alt="Mqdefault"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fancybox-mobile iframe" href="http://www.youtube.com/embed/QsCkty3mpg0"><img style="width: auto;height: 100px;" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/mqdefault.jpg" alt="Mqdefault"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fancybox-mobile iframe" href="http://www.youtube.com/embed/1J9Z0qhKZqo"><img style="width: auto;height: 100px;" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/mqdefault_003.jpg" alt="Mqdefault"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="visible-md visible-lg visible-sm">
+                      <div class="panel panel-default">
+                            <div class="panel-heading">Gallery</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="thumbnail">
+                                          <a href="http://www.mumbaitheater.com/gallery/neilnitinmukesh"><img data-src="holder.js/200x300" alt="Neil Nitin Mukesh" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/neilnitinmukesh.jpeg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="thumbnail">
+                                          <a href="http://www.mumbaitheater.com/gallery/alia-bhatt"><img data-src="holder.js/200x300" alt="Alia Bhatt" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/alia-bhatt.jpeg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="thumbnail">
+                                          <a href="http://www.mumbaitheater.com/gallery/sonalchauhan"><img data-src="holder.js/200x300" alt="Sonal Chauhan" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/sonalchauhan.jpeg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <div class="thumbnail">
+                                          <a href="http://www.mumbaitheater.com/gallery/adah-sharma"><img data-src="holder.js/200x300" alt="Adah Sharma" src="MumbaiTheater%20-%20Crazy%20for%20Bollywood_files/adah-sharma.jpeg"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 visible-lg visible-md">
+                <blockquote>
+                    <p>Mujhpar ek ehsaan karna ... ki mujhpar koi ehsaan na karna</p>
+                    <footer>
+                        <a href="http://www.mumbaitheater.com/actors/salmankhan">Salman Khan</a> as Lovely Singh in <a href="http://www.mumbaitheater.com/movies/bodyguard">Bodyguard</a> (2011)
+                    </footer>
+                </blockquote>
+                <div class="panel panel-default">
+                    <div class="panel-heading">BoxOffice Now - Worldwide</div>
+                    <table class="table table-striped">
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Upcoming Movies</div>
+                    <table class="table table-striped">
+                            <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

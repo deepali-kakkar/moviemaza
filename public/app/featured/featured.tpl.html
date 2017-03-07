@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Featured Movies</div>
+    <div class="panel-body">
+        <div class="row" >        
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12"  ng-repeat="movie in featuredMovies">
+                <div class="thumbnail">
+                    <a href="http://www.mumbaitheater.com/movies/m-s-dhoni"><img alt="{{movie.name}}" ng-src="../images/{{movie.image_path}}"></a>
+                </div>
+            </div>        
+        </div>
+    </div>
+</div>
